@@ -9,7 +9,7 @@ var presidents = [
 	{ firstName: 'Ronald', lastName: 'Reagan', termLength: '2', party: 'Republican', yearsOfPresidency: '8' }
 ];
 
-console.log(presidents[2].firstName, presidents[2].lastName);
+console.log( presidents[ 2 ].firstName, presidents[ 2 ].lastName );
 
 function howdy() {
 	return 'Andy DiBella says hello!';
@@ -17,6 +17,22 @@ function howdy() {
 
 console.log( howdy() );
 
-var numba = function (string) {
+var numba = function(string) {
+	if ( string.length < 7 ) {
+		return "What a short little word!";
+	} else if ( string.length > 7 ) {
+		return "I'm sorry, but that's too many to count";
+	} else { ( string.length == 7 )
+		return "7, what a perfect choice!";
+	}
+}
 
-};
+console.log( numba( 7 ) );
+console.log( numba( "seventy" ) );
+console.log( numba( "university" ) );
+
+function inception( callback, value ) {
+	callback(value);
+}
+
+console.log()
