@@ -9,10 +9,14 @@ var presidents = [
 	{ firstName: 'Ronald', lastName: 'Reagan', termLength: '2', party: 'Republican', yearsOfPresidency: '8' }
 ];
 
-console.log( presidents.firstName[ 2 ].lastName[ 2 ] );
+console.log(presidents[2].firstName, presidents[2].lastName);
 
 function howdy() {
 	return 'Andy DiBella says hello!';
 }
 
 console.log( howdy() );
+
+var numba = function (string) {
+
+};
